@@ -1,0 +1,53 @@
+
+    $container-bg:lighten(red,25%);
+        $left-bg:pink;
+        $right-bg: darken(pink,25%);
+        $innertext:yellow;
+         $button-bg:grey;
+         $theme-name:theme-1;
+    .theme-1{
+       
+        .container{
+            background-color: $container-bg;
+            border:1px solid black;
+            display: flex;
+            height:500px;
+            justify-content: space-between;
+            margin:0 auto;
+            padding: 1em;
+            width: 50%;
+            *{
+                color:$innertext;
+                font-size: 2px;
+            }
+            .left{
+                background-color: $left-bg;
+                height: 100%;
+                width: 69%;
+            }
+            .right{
+                background-color: $right-bg;
+                height: 100%;
+                position: relative;
+                width: 29%;
+                font-size: 25px;
+               
+              
+            }
+            .button{
+                background-color: $button-bg;
+                border: 0;
+                border-radius: 10px;
+                bottom: 10px;
+                cursor: pointer;
+                font-size: 1rem;
+                font-weight: bold;
+                padding:1em 2em;
+                position: absolute;
+                right: 10px;
+            }
+        }
+   }
+//}
+
+//@include themeable(theme1, green, yellow, red,pink ,blue);

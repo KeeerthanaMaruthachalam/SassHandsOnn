@@ -1,0 +1,36 @@
+
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Sass Implementation</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet"  media="screen" href="sassform.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+   <script>
+   $(document).ready(function(){
+       $("button").click(function(){
+       $("img").animate({
+           left:'250px',
+           height:'250px',
+           width:'250px'});
+   });
+   });
+   </script>
+</head>
+
+<body class="theme-1">
+    <div class="container">
+        <div class="left">
+                <img src="acheron.jpg.jpg">
+           
+        </div>
+        <div class="right">
+            By clicking the button the image gets animated to bigger size. <br>
+            <br>Try it.
+            <button class="button">Button</button>
+        </div>
+    </div>
+    
+</body>
+</html>

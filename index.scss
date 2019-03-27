@@ -1,0 +1,37 @@
+body{
+    background-color: grey;
+}
+.flex-container{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: antiquewhite;
+    .demo{
+        background-color: aqua;
+       
+    }
+    flex: 1 1 35%;
+    margin: 10px;
+    height: 100px;
+    flex-direction:row;
+    padding: 10px;
+    justify-content: space-between;
+}
+  $padding: 15px 32px;
+.button1,.button2 {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: $padding;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+  }   
+   $font:15px;
+   $f_style: bold;
+   h3{
+       font-size: $font+5;
+       font-style: $font;
+   }        
